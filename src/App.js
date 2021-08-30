@@ -5,13 +5,6 @@ import Alert from "./components/Alert";
 import ExpenseList from "./components/ExpenseList";
 import uuid from "uuid/v4";
 
-// each expense will be given its own id number to help organize data
-// const initialExpenses = [
-//   { id: uuid(), charge: "rent", amount: 1600 },
-//   { id: uuid(), charge: "car payment", amount: 200 },
-//   { id: uuid(), charge: "credit card bill", amount: 200 },
-// ];
-
 //saving items in browser storage. Allows refreshing of page w/o data loss.
 const initialExpenses = localStorage.getItem("expenses")
   ? JSON.parse(localStorage.getItem("expenses"))
